@@ -3,7 +3,7 @@
 This repository contains the code I developed to predict the land cover of Europe for a competition.  
 The data consists of 416 numerical features and 72 different labels, with 42237 samples.
 
-I used Pandas, Numpy and SKLearn for the data manipulation, and TensorFlow for the Machine Learning model - other SKLearn models were tested but didn't yield good results.
+I used Pandas, Numpy and SKLearn for the data manipulation, and TensorFlow for the Machine Learning model - other SKLearn models were tested but didn't yielded good results.
 
 As of the time of writing this page, this code scored 0.48018 (weighted F1 score), granting a 4th place in the competition.
 
