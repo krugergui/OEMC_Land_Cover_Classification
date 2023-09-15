@@ -5,7 +5,7 @@ The data consists of 416 numerical features and 72 different labels, with 42237 
 
 I used Pandas, Numpy and SKLearn for the data manipulation, and TensorFlow for the Machine Learning model - other SKLearn models were tested but didn't yielded good results.
 
-As of the time of writing this page, this code scored 0.48018 (weighted F1 score), granting a 4th place in the competition.
+As of the time of writing this page, this code scored above 0.48 (weighted F1 score), granting a 4th place in the competition.
 
 ![4th Place](pics/4th_place.png)
 
@@ -17,6 +17,7 @@ During my trials in this competition there was a lot of learning, for this parti
 - PCA Tranformation - didn't granted a higher score, but by reducing the dimensionality (from 416 to 250 with same score) I was able to run more tests in less time
 - Stratifiyng the Train/Validation Data - As this Dataset has a very uneven distribution of labels, it helped by splitting the train and validation dataset with enough data for each label
 - Cross-validation - The local validation results were consistently going up with the test submission results - this indicates a good train/test data selection by the organizers part
+- Ensembling - Ensembling with softvoting, XGBoost, as well as many different TF models yielded always a few points higher score, but as the time of this competition is limited, I mainly sticked to one TF model
 - TensorFlow
   - The hyperparametrization of TensorFlow is very vast, many was tested but I got the better results with few layers (3), and a combination of Sigmoid and ReLu layers.
   - Small batch sizes tented to overfit after few epochs (~5), big batch sizes didn't converged to a good score, but a combination of starting with small batch sizes then incresing the size would yield a good generalization
