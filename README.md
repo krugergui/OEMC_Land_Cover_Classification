@@ -16,6 +16,7 @@ During my trials in this competition there was a lot of learning, for this parti
 - Data Transformation Normalization and Outlier detection - The data was very skewed with many outliers and input errors, I was selecting and transforming the data feature by feature, but comparing my work with SKLearns PowerTransform it became clear that the former was enough to get a high score, if this were a longer project, manually reviewing the data would yield a better result
 - PCA Tranformation - didn't granted a higher score, but by reducing the dimensionality (from 416 to 250 with same score) I was able to run more tests in less time
 - Stratifiyng the Train/Validation Data - As this Dataset has a very uneven distribution of labels, it helped by splitting the train and validation dataset with enough data for each label
+- Class weighting - for the same reasons above
 - Cross-validation - The local validation results were consistently going up with the test submission results - this indicates a good train/test data selection by the organizers part
 - Ensembling - Ensembling with softvoting, XGBoost, as well as many different TF models yielded always a few points higher score, but as the time of this competition is limited, I mainly sticked to one TF model
 - TensorFlow
